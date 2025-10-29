@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madison S. Oliveira - Portfólio</title>
+  <link rel="stylesheet" href="base.css">
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="logo">MADISON S. OLIVEIRA</div>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#habilidades">HABILIDADES</a></li>
+        <li><a href="#projetos">PROJETOS</a></li>
+        <li><a href="#curriculo">CURRÍCULO</a></li>
+        <li><a href="#eventos">EVENTOS</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+      </ul>
+      <button class="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  
+  <main>
+   
+    <section class="perfil" id="sobre">
+      <div class="perfil-texto">
+        <h2>EU SOU</h2>
+        <h1>DESENVOLVEDOR</h1>
+        <p>Especializado em cibersegurança</p>
+      </div>
+
+      <div class="perfil-foto">
+        <img src="imagem/imagem1.png" alt="Foto de Madison S. Oliveira">
+      </div>
+    </section>
+
+   
+    <section class="sobre">
+      <h2>SOBRE MIM</h2>
+      <p>
+        Sou desenvolvedor e especialista em cibersegurança, com foco em inovação e boas práticas na área de tecnologia.
+        Tenho experiência com projetos voltados à segurança digital, ensino de tecnologia e desenvolvimento de sistemas web.
+      </p>
+    </section>
+
+   
+    <section class="habilidades" id="habilidades">
+      <h2>HABILIDADES</h2>
+      <ul>
+        <li>JAVA ★★★★★</li>
+        <li>HTML ★★★★★</li>
+        <li>CSS ★★★★☆</li>
+        <li>NODEJS ★★★★☆</li>
+        <li>REACT ★★★★☆</li>
+        <li>FIGMA ★★★☆☆</li>
+        <li>PYTHON ★★★☆☆</li>
+        <li>C++ ★★★★☆</li>
+        <li>CIBERSEGURANÇA ★★★★★</li>
+        <li>PERÍCIA FORENSE ★★★★☆</li>
+      </ul>
+    </section>
+
+   
+    <section class="projetos" id="projetos">
+      <h2>PROJETOS EM DESTAQUE</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Manual Hacker Iniciante</h3>
+          <p>Guia introdutório sobre cibersegurança e práticas éticas em defesa digital.</p>
+          <a href="#">Ver no GitHub →</a>
+        </div>
+        <div class="card">
+          <h3>CheckBus</h3>
+          <p>Sistema de controle de entrada e saída de alunos via QR Code.</p>
+          <a href="#">Ver no GitHub →</a>
+        </div>
+        <div class="card">
+          <h3>IA Educacional</h3>
+          <p>Livro e projeto para ensinar inteligência artificial na educação básica.</p>
+          <a href="#">Ver no GitHub →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="curriculo" id="curriculo">
+      <h2>CURRÍCULO</h2>
+      <p>
+        Tecnólogo em Cibersegurança - UniCesumar (2025)  
+        Engenheiro de Software - UniFatec (em curso)  
+        Licenciado em Computação e Informática - UNICV  
+        Pós-graduado em diversas áreas da TI e Educação Tecnológica.
+      </p>
+      <a href="#" class="btn-download">Download</a>
+    </section>
+
+
+    <section class="eventos" id="eventos">
+      <h2>EVENTOS</h2>
+      <ul>
+        <li><b>Bahia Tech Experience 2025</b> - Tecnologia e Inovação Sustentável</li>
+        <li><b>NASA Space Apps Challenge 2025</b> - Hackathon Científico</li>
+        <li><b>Congresso SUCESU Bahia</b> - Cibersegurança e Inovação</li>
+        <li><b>Guardiões Cibernéticos 2025</b> - Defesa da Informação</li>
+      </ul>
+    </section>
+    
+    <section class="eventos" id="eventos">
+      <h2>EVENTOS</h2>
+      <ul>
+        <li><b>Bahia Tech Experience 2025</b> - Tecnologia e Inovação Sustentável</li>
+        <li><b>NASA Space Apps Challenge 2025</b> - Hackathon Científico</li>
+        <li><b>Congresso SUCESU Bahia</b> - Cibersegurança e Inovação</li>
+        <li><b>Guardiões Cibernéticos 2025</b> - Defesa da Informação</li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer id="contato">
+    <p>© 2025 Madison S. Oliveira — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+   
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

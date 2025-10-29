@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #00ff88;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #00ff88;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #00ff88;
+}
+
+
+.perfil {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+}
+
+.perfil-texto h1 {
+  color: #00ff88;
+  font-size: 2.5rem;
+}
+
+.perfil-foto img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #00ff88;
+}
+
+
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+.habilidades ul {
+  list-style: none;
+  line-height: 2;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+
+.btn-download {
+  display: inline-block;
+  background: #00ff88;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.eventos ul {
+  list-style: none;
+}
+
+.eventos li {
+  margin-bottom: 10px;
+}
+
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .perfil {
+    flex-direction: column;
+    text-align: center;
+  }
+}
