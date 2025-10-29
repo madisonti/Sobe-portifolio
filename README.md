@@ -97,7 +97,3 @@ Este projeto está licenciado sob a Licença MIT – você pode usar, modificar 
 “A segurança da informação começa com a consciência e evolui com a prática.”
 
 
----
-
-Deseja que eu adicione um **bloco de “Deploy automático via GitHub Pages”** (com instruções YAML para CI/CD)?  
-Isso deixaria o README pronto para publicação automática toda vez que você atualizar o site no repositó
